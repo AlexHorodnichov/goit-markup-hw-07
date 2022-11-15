@@ -10,30 +10,31 @@
         rel="stylesheet">
     <link rel="stylesheet" href="./css/modern-normalize.css">
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/main.css">
     <title>Portfolio</title>
 </head>
 
 <body>
     <header>
-        <div class="container header-wrapper">
+        <div class="container header__wrapper">
             <nav class="nav">
-                <a class="logo-col" href="./index.html"><span class="logo">Web</span>Studio</a>
+                <a class="logo" href="./index.html"><span class="logo__part footer__part">Web</span>Studio</a>
                 <ul class="nav-list">
-                    <li><a class="link" href="./index.html">Студія</a></li>
-                    <li><a class="link link-current" href="./portfolio.html">Портфоліо</a></li>
-                    <li><a class="link link-cont" href="#">Контакти</a></li>
+                    <li><a class="nav-list__link" href="./index.html">Студія</a></li>
+                    <li><a class="nav-list__link nav-list__link--current" href="./portfolio.html">Портфоліо</a></li>
+                    <li><a class="nav-list__link" href="#">Контакти</a></li>
                 </ul>
             </nav>
             <ul class="contacts-list">
                 <li>
-                    <a class="contacts mail" href="mailto:info@devstudio.com"><svg class="social-mail" width="16"
-                            height="12">
+                    <a class="contacts-list__link" href="mailto:info@devstudio.com"><svg class="contacts-list__icon"
+                            width="16" height="12">
                             <use href="./images/icons.svg/cont.svg#icon-mail"></use>
                         </svg>info@devstudio.com</a>
                 </li>
                 <li>
-                    <a class="contacts contacts-tel" href="tel:+380961111111"><svg class="social-tel" width="10"
-                            height="16">
+                    <a class="contacts-list__link contacts-list__link--offset" href="tel:+380961111111"><svg
+                            class="contacts-list__icon" width="10" height="16">
                             <use href="./images/icons.svg/cont.svg#icon-phone"></use>
                         </svg>+38 096 111 11 11</a>
                 </li>
@@ -47,20 +48,20 @@
 
             <div class="container">
                 <ul class="filter-list">
-                    <li class="filter-item"><button class="filter-btn" type="button">Усі</button></li>
-                    <li class="filter-item"><button class="filter-btn" type="button">Веб-сайти</button></li>
-                    <li class="filter-item"><button class="filter-btn" type="button">Додатки</button></li>
-                    <li class="filter-item"><button class="filter-btn" type="button">Дизайн</button></li>
-                    <li class="filter-item"><button class="filter-btn" type="button">Маркетинг</button></li>
+                    <li class="filter-list filter-list__filter-item"><button class="filter-list__filter-btn" type="button">Усі</button></li>
+                    <li class="filter-list filter-list__filter-item"><button class="filter-list__filter-btn" type="button">Веб-сайти</button></li>
+                    <li class="filter-list filter-list__filter-item"><button class="filter-list__filter-btn" type="button">Додатки</button></li>
+                    <li class="filter-list filter-list__filter-item"><button class="filter-list__filter-btn" type="button">Дизайн</button></li>
+                    <li class="filter-list filter-list__filter-item"><button class="filter-list__filter-btn" type="button">Маркетинг</button></li>
                 </ul>
-                <ul class="portfolio-item">
-                    <li class="portfolio-list">
-                        <a class="item" href="#">
-                            <div class="portfolio-images-wrapper">
-                                <img class="images" src="./images/portfolio/img(0).jpg"
+                <ul class="portfolio-list">
+                    <li class="portfolio-list portfolio-list__item">
+                        <a class="portfolio-list__link" href="#">
+                            <div class="portfolio-list__image-wrapper">
+                                <img class="portfolio-list__image" src="./images/portfolio/img(0).jpg"
                                     alt="Постер New Orlean vs Golden Star" width="370" height="294">
-                                <div class="portfolio-images">
-                                    <p class="portfolio-text">
+                                <div class="portfolio-image">
+                                    <p class="portfolio-list__text">
                                         Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                                         Все
                                         це
@@ -70,19 +71,19 @@
                                 </div>
                             </div>
 
-                            <div class="filling">
-                                <h2 class="name-services">Технокряк</h2>
-                                <p class="services">Веб-сайт</p>
+                            <div class="portfolio-list__filling">
+                                <h2 class="portfolio-list__name-services">Технокряк</h2>
+                                <p class="portfolio-list__services">Веб-сайт</p>
                             </div>
                         </a>
                     </li>
-                    <li class="portfolio-list">
-                        <a class="item" href="#">
-                            <div class="portfolio-images-wrapper">
-                                <img class="images" src="./images/portfolio/img(1).jpg"
+                    <li class="portfolio-list portfolio-list__item">
+                        <a class="portfolio-list__link" href="#">
+                            <div class="portfolio-list__image-wrapper">
+                                <img class="portfolio-list__image" src="./images/portfolio/img(1).jpg"
                                     alt="Постер New Orlean vs Golden Star" width="370" height="294">
                                 <div class="portfolio-images">
-                                    <p class="portfolio-text">
+                                    <p class="portfolio-list__text">
                                         Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                                         Все
                                         це
@@ -91,19 +92,19 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="filling">
-                                <h2 class="name-services">Постер New Orlean vs Golden Star</h2>
-                                <p class="services">Дизайн</p>
+                            <div class="portfolio-list__filling">
+                                <h2 class="portfolio-list__name-services">Постер New Orlean vs Golden Star</h2>
+                                <p class="portfolio-list__services">Дизайн</p>
                             </div>
                         </a>
                     </li>
-                    <li class="portfolio-list">
-                        <a class="item" href="#">
-                            <div class="portfolio-images-wrapper">
-                                <img class="images" src="./images/portfolio/img(2).jpg"
+                    <li class="portfolio-list portfolio-list__item">
+                        <a class="portfolio-list__link" href="#">
+                            <div class="portfolio-list__image-wrapper">
+                                <img class="portfolio-list__image" src="./images/portfolio/img(2).jpg"
                                     alt="Постер New Orlean vs Golden Star" width="370" height="294">
                                 <div class="portfolio-images">
-                                    <p class="portfolio-text">
+                                    <p class="portfolio-list__text">
                                         Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                                         Все
                                         це
@@ -112,19 +113,19 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="filling">
-                                <h2 class="name-services">Ресторан Seafood</h2>
-                                <p class="services">Додаток</p>
+                            <div class="portfolio-list__filling">
+                                <h2 class="portfolio-list__name-services">Ресторан Seafood</h2>
+                                <p class="portfolio-list__services">Додаток</p>
                             </div>
                         </a>
                     </li>
-                    <li class="portfolio-list">
-                        <a class="item" href="#">
-                            <div class="portfolio-images-wrapper">
-                                <img class="images" src="./images/portfolio/img(3).jpg"
+                    <li class="portfolio-list portfolio-list__item">
+                        <a class="portfolio-list__link" href="#">
+                            <div class="portfolio-list__image-wrapper">
+                                <img class="portfolio-list__image" src="./images/portfolio/img(3).jpg"
                                     alt="Постер New Orlean vs Golden Star" width="370" height="294">
                                 <div class="portfolio-images">
-                                    <p class="portfolio-text">
+                                    <p class="portfolio-list__text">
                                         Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                                         Все
                                         це
@@ -133,19 +134,19 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="filling">
-                                <h2 class="name-services">Проєкт Prime</h2>
-                                <p class="services">Маркетинг</p>
+                            <div class="portfolio-list__filling">
+                                <h2 class="portfolio-list__name-services">Проєкт Prime</h2>
+                                <p class="portfolio-list__services">Маркетинг</p>
                             </div>
                         </a>
                     </li>
-                    <li class="portfolio-list">
-                        <a class="item" href="#">
-                            <div class="portfolio-images-wrapper">
-                                <img class="images" src="./images/portfolio/img(4).jpg"
+                    <li class="portfolio-list portfolio-list__item">
+                        <a class="portfolio-list__link" href="#">
+                            <div class="portfolio-list__image-wrapper">
+                                <img class="portfolio-list__image" src="./images/portfolio/img(4).jpg"
                                     alt="Постер New Orlean vs Golden Star" width="370" height="294">
                                 <div class="portfolio-images">
-                                    <p class="portfolio-text">
+                                    <p class="portfolio-list__text">
                                         Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                                         Все
                                         це
@@ -154,19 +155,19 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="filling">
-                                <h2 class="name-services">Проєкт Boxes</h2>
-                                <p class="services">Додаток</p>
+                            <div class="portfolio-list__filling">
+                                <h2 class="portfolio-list__name-services">Проєкт Boxes</h2>
+                                <p class="portfolio-list__services">Додаток</p>
                             </div>
                         </a>
                     </li>
-                    <li class="portfolio-list">
-                        <a class="item" href="#">
-                            <div class="portfolio-images-wrapper">
-                                <img class="images" src="./images/portfolio/img(5).jpg"
+                    <li class="portfolio-list portfolio-list__item">
+                        <a class="portfolio-list__link" href="#">
+                            <div class="portfolio-list__image-wrapper">
+                                <img class="portfolio-list__image" src="./images/portfolio/img(5).jpg"
                                     alt="Постер New Orlean vs Golden Star" width="370" height="294">
                                 <div class="portfolio-images">
-                                    <p class="portfolio-text">
+                                    <p class="portfolio-list__text">
                                         Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                                         Все
                                         це
@@ -175,39 +176,39 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="filling">
-                                <h2 class="name-services">Inspiration has no Borders</h2>
-                                <p class="services">Веб-сайт</p>
+                            <div class="portfolio-list__filling">
+                                <h2 class="portfolio-list__name-services">Inspiration has no Borders</h2>
+                                <p class="portfolio-list__services">Веб-сайт</p>
                             </div>
                         </a>
                     </li>
-                    <li class="portfolio-list">
-                        <a class="item" href="#">
-                            <div class="portfolio-images-wrapper">
-                                <img class="images" src="./images/portfolio/img(6).jpg"
+                    <li class="portfolio-list portfolio-list__item">
+                        <a class="portfolio-list__link" href="#">
+                            <div class="portfolio-list__image-wrapper">
+                                <img class="portfolio-list__image" src="./images/portfolio/img(6).jpg"
                                     alt="Постер New Orlean vs Golden Star" width="370" height="294">
                                 <div class="portfolio-images">
-                                    <p class="portfolio-text">
+                                    <p class="portfolio-list__text">
                                         Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                                         Все це дозволить відвідувачу отримати
                                         вичерпні відомості про компанію чи приватну особу.
                                     </p>
                                 </div>
                             </div>
-                            <div class="filling">
-                                <h2 class="name-services">Видання Limited Edition</h2>
-                                <p class="services">Дизайн</p>
+                            <div class="portfolio-list__filling">
+                                <h2 class="portfolio-list__name-services">Видання Limited Edition</h2>
+                                <p class="portfolio-list__services">Дизайн</p>
                             </div>
                         </a>
                     </li>
 
-                    <li class="portfolio-list">
-                        <a class="item" href="#">
-                            <div class="portfolio-images-wrapper">
-                                <img class="images" src="./images/portfolio/img(7).jpg"
+                    <li class="portfolio-list portfolio-list__item">
+                        <a class="portfolio-list__link" href="#">
+                            <div class="portfolio-list__image-wrapper">
+                                <img class="portfolio-list__image" src="./images/portfolio/img(7).jpg"
                                     alt="Постер New Orlean vs Golden Star" width="370" height="294">
                                 <div class="portfolio-images">
-                                    <p class="portfolio-text">
+                                    <p class="portfolio-list__text">
                                         Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                                         Все
                                         це
@@ -216,20 +217,20 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="filling">
-                                <h2 class="name-services">Проєкт LAB</h2>
-                                <p class="services">Маркетинг</p>
+                            <div class="portfolio-list__filling">
+                                <h2 class="portfolio-list__name-services">Проєкт LAB</h2>
+                                <p class="portfolio-list__services">Маркетинг</p>
                             </div>
                         </a>
                     </li>
 
-                    <li class="portfolio-list">
-                        <a class="item" href="#">
-                            <div class="portfolio-images-wrapper">
-                                <img class="images" src="./images/portfolio/img(8).jpg"
+                    <li class="portfolio-list portfolio-list__item">
+                        <a class="portfolio-list__link" href="#">
+                            <div class="portfolio-list__image-wrapper">
+                                <img class="portfolio-list__image" src="./images/portfolio/img(8).jpg"
                                     alt="Постер New Orlean vs Golden Star" width="370" height="294">
                                 <div class="portfolio-images">
-                                    <p class="portfolio-text">
+                                    <p class="portfolio-list__text">
                                         Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                                         Все
                                         це
@@ -238,9 +239,9 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="filling">
-                                <h2 class="name-services">Growing Business</h2>
-                                <p class="services">Додаток</p>
+                            <div class="portfolio-list__filling">
+                                <h2 class="portfolio-list__name-services">Growing Business</h2>
+                                <p class="portfolio-list__services">Додаток</p>
                             </div>
                         </a>
                     </li>
@@ -252,61 +253,62 @@
     <footer class="footer">
         <div class="container footer-social">
             <div>
-                <a class="footer-logo" href="./index.html"><span class="logo">Web</span>Studio</a>
-                <address>
-                    <a class="footer-item" href="https://goo.gl/maps/DmpzDfKuA3Ak4CY98" target="_blank"
+                <a class="logo" href="./index.html">Web<span class="logo__footer-part">Studio</span></a>
+                <address class="footer__address">
+                    <a class="footer__item" href="https://goo.gl/maps/DmpzDfKuA3Ak4CY98" target="_blank"
                         rel="noopener noreferrer">м.
                         Київ, пр-т Лесі
-                        Українки, 26</a>
-                    <a class="footer-contacts" href="mailto:info@devstudio.com">info@devstudio.com</a>
-                    <a class="footer-contacts" href="tel:+380961111111">+38 096 111 11 11</a>
+                        Українки, 26
+                    </a>
+                    <a class="footer__contacts" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                    <a class="footer__contacts" href="tel:+380961111111">+38 096 111 11 11</a>
                 </address>
             </div>
-            <div class="footer-second-block">
-                <h3 class="footer-title">приєднуйтесь</h3>
-                <ul class="footer-icons-social">
-                    <li class="icons-social">
-                        <a class="footer-social-link" href="#" target="_blank" aria-label="instagram">
-                            <svg class="social-icon" width="20" height="20">
+            <div class="footer__social">
+                <h3 class="footer__title">приєднуйтесь</h3>
+                <ul class="footer__icons-social">
+                    <li>
+                        <a class="footer__social-link" href="#" target="_blank" aria-label="instagram">
+                            <svg width="20" height="20">
                                 <use href="./images/icons.svg/sprite.svg#icon-instagram"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="icons-social">
-                        <a class="footer-social-link" href="#" target="_blank" aria-label="twitter">
-                            <svg class="social-icon" width="20" height="20">
+                    <li>
+                        <a class="footer__social-link" href="#" target="_blank" aria-label="twitter">
+                            <svg width="20" height="20">
                                 <use href="./images/icons.svg/sprite.svg#icon-twitter"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="icons-social">
-                        <a class="footer-social-link" href="#" target="_blank" aria-label="facebook">
-                            <svg class="social-icon" width="20" height="20">
+                    <li>
+                        <a class="footer__social-link" href="#" target="_blank" aria-label="facebook">
+                            <svg width="20" height="20">
                                 <use href="./images/icons.svg/sprite.svg#icon-facebook"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="footer-social-link">
-                        <a class="footer-social-link" href="#" target="_blank" aria-label="linkedin">
-                            <svg class="social-icon" width="20" height="20">
+                    <li>
+                        <a class="footer__social-link" href="#" target="_blank" aria-label="linkedin">
+                            <svg width="20" height="20">
                                 <use href="./images/icons.svg/sprite.svg#icon-linkedin"></use>
                             </svg>
                         </a>
                     </li>
                 </ul>
             </div>
-    
-            <div class="footer-third-block">
-                <h3 class="footer-title">
+
+            <div class="footer__subscription-block">
+                <h3 class="footer__title">
                     ПІДПИШІТЬСЯ НА РОЗСИЛКУ
                 </h3>
-            <div class="footer-input-box">
-                <input class="footer-input" type="email" placeholder="E-mail" required>
-                <button class="footer-btn" type="submit">Підписатися</button>
-                <svg class="footer-icon" width="24" height="24">
-                    <use href="./images/modal-icons.svg#icon-telegram"></use>
-                </svg>
-            </div>
+                <div class="footer__input-box">
+                    <input class="footer__input" type="email" placeholder="E-mail" required>
+                    <button class="footer__btn" type="submit">Підписатися</button>
+                    <svg class="footer__icon" width="24" height="24">
+                        <use href="./images/modal-icons.svg#icon-telegram"></use>
+                    </svg>
+                </div>
             </div>
         </div>
     </footer>
